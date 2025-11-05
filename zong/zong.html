@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		
+		
+		<link rel="stylesheet" href="./css/footer.css">
+		
+		
+		<link rel="stylesheet" href="./css/class_table.css">
+		
+		
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.title{
+				text-align: center;
+				border-bottom: 1px solid #aaa;
+			}
+			.all{
+				background-color: #eeeeee;
+				width: 1080px;
+				border-radius: 10px;
+			}
+			.all ol{
+				width: 1080px;
+				overflow: hidden;
+			}
+			.all ol li{
+				list-style: none;
+				background-color: #ffffff;
+				width: 220px;
+				height: auto;
+				padding: 10px;
+				margin: 4px;
+				border: 2px solid #aaaaaa;
+				border-radius: 10px;
+				float: left;
+			}
+			.all ol::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.all ol li a{
+				text-decoration: none;
+				color: orange;
+			}	
+			.all ol li a.playing{
+				text-decoration: underline;
+				color: red;
+			}
+			
+			
+			
+			
+			#gotop{
+				display: block;
+				width:50px;
+				height:50px;
+				line-height: 50px;
+				position:fixed;
+				right: 10px;
+				bottom:10px;
+				color:#fff;
+				background-color: #005cbf;
+				border:2px solid #fff;
+				border-radius:50%;
+				text-align: center;
+			}
+			header{
+				position:sticky;
+				left:0;
+				top: 0;
+			}
+
+			*{
+				width:900;
+				margin:0 auto;
+			}
+		</style>
+		
+		
+		<link rel="stylesheet" href="./css/header.css">
+		
+		
+		
+	</head>
+	<body>
+		
+		
+		
+		
+		
+		<!-- 头部 -->
+		<header class="header clearfix" id="top">
+		    <!-- 头部左侧 -->
+		    <div class="header-left">
+		        <h1 class="logo">NOC 新云课堂</h1>
+		        <nav class="nav">
+		            <a class="nav-item nav-active" href="#">首页</a>
+		            <a class="nav-item" href="#">课程分类</a>
+		            <a class="nav-item" href="#">直播课堂</a>
+		            <a class="nav-item" href="#">阶段测试</a>
+		        </nav>
+		    </div>
+		    <!-- 头部右侧 -->
+		    <div class="header-right">
+		        <div class="header-right-unlogined">
+		            <a href="#" class="btn-login">登录</a>
+		            <a href="#" class="btn-reg">注册</a>
+		        </div>
+		    </div>
+		</header>
+		
+		
+		
+		
+		
+		<div class=video>
+		    <h2 class="player-title">Chrome安装</h2>
+		    <video src="./src/video/01.mp4" id="video" class="video" width="900" controls></video>
+		</div>
+		
+		
+		
+		
+		<!-- 学习资料区域 -->
+		<section class="info">
+		    <table>
+		        <!-- <table border="1" width="600"> -->
+		        <caption>本章资料</caption>
+		        <thead>
+		            <tr>
+		                <th>名称</th>
+		                <th>类型</th>
+		                <th>获取</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td>教案</td>
+		                <td>docx</td>
+		                <td><a href="#">下载</a></td>
+		            </tr>
+		            <tr>
+		                <td>HTML5手册</td>
+		                <td colspan="2"><a href="https://www.w3school.com.cn/html5/index.asp" target="_blank">跳转</a></td>
+		            </tr>
+		            <tr>
+		                <td>腾讯软件中心</td>
+		                <td colspan="2"><a href="https://pc.qq.com/" target="_blank">跳转</a></td>
+		            </tr>
+		        </tbody>
+		        <tfoot>
+		            <tr>
+		                <td>本章项目源码</td>
+		                <td>zip</td>
+		                <td><a href="#">下载</a></td>
+		            </tr>
+		        </tfoot>
+		    </table>
+		</section>
+		
+		
+		
+		
+		<div class="all">
+			<h4 class="title">课程列表</h4>
+			<p>
+				<ol>
+					<li><a class="playing" href=" ">Chrome安装</a ></li>
+					<li><a href="#">Web描述</a ></li>
+					<li><a href="#">HTML5概述</a ></li>
+					<li><a href="#">HTML5新特性</a ></li>
+					<li><a href="#">HTML5语法与特性</a ></li>
+					<li><a href="#">HTML5页面编码设定</a ></li>
+					<li><a href="#">HTML5段落</a ></li>
+					<li><a href="#">HTML5超链接</a ></li>
+					<li><a href="#">HTML5图片</a ></li>
+					<li><a href="#">HTML5列表</a ></li>
+					<li><a href="#">HTML5表格</a ></li>	
+				</ol>
+			</p >
+		</div>
+		
+		
+		
+		
+		
+		<!-- 尾部 -->
+		<footer class="footer">
+		    <div class="footer__wrapper">
+		        <p class="message">
+		            公司地址：xx省xxx市xx街xx号<br /> 联系电话：
+		            <a href="tel://xxxx-xxxxxxxx">xxxx-xxxxxxxx</a><br /> 详细邮箱：
+		            <a href="mailto://xxxxx@xxx.xxx">xxxxx@xxx.xxx</a><br />
+		        </p>
+		        <p>
+		            <img src="./src/images/footer-logo-1.png" width="90" height="30">
+		            <img src="./src/images/footer-logo-2.jpg" width="90" height="30">
+		        </p>
+		        <p>Copyright &copy;2020</p>
+		    </div>
+
+		</footer>
+		<div>
+			<a href="#top" id=gotop>TOP</a>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+</html>
